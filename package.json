@@ -6,7 +6,7 @@
   "scripts": {
     "client": "npm start --prefix frontend",
     "buildClient": "cd frontend && npm run build",
-    "server": "npm start --prefix backend",
+    "server": "cd backend && npm run start:dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
