@@ -5,7 +5,7 @@ import "./Base.css";
 const Base = () => {
   return (
     <header className="header">
-      <NavLink to="/" className="logo2">
+      <NavLink to="/" className={({ isActive }) => (isActive ? "logo2" : "logo2")}>
         Memory
       </NavLink>
       <div className="logo" />
