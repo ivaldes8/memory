@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+
+import { useAppSelector } from "../storage/hooks";
+import { selectAlert, selectLoading } from "../storage/features/settingSlice";
+
+import storage from "../utils/storage";
 import "./Base.css";
 
+
 const Base = () => {
+
   return (
     <header className="header">
-      <NavLink to="/" className={({ isActive }) => (isActive ? "logo2" : "logo2")}>
+      <NavLink
+        to="/"
+        className={({ isActive }) => (isActive ? "logo2" : "logo2")}
+      >
         Memory
       </NavLink>
       <div className="logo" />
