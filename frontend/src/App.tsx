@@ -6,7 +6,7 @@ import Base from './layouts/Base';
 import { useAppSelector } from "./storage/hooks";
 import { selectAlert, selectLoading } from "./storage/features/settingSlice";
 import './App.css';
-import Loading from "./components/loading";
+import Loading from "./components/loading/Loading";
 
 function App() {
 
@@ -27,12 +27,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Base />
-        {
-          loading ?
-            (<Loading />) :
-            (<AppRoutes />)
-        }
-
+        {loading && <Loading/>}
+        <AppRoutes/>
       </BrowserRouter>
     </div>
   );

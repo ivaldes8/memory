@@ -1,6 +1,6 @@
 import api from '../config/Api'
 
-const baseEndpoint = '/oauth/users'
+const baseEndpoint = '/users/me'
 
 export default {
   getUsers (params) {

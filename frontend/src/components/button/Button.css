@@ -1,0 +1,24 @@
+button {
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+  font-size: medium;
+  border: 1px;
+  font-weight: 600;
+  font-family: "Neucha", cursive;
+  padding-bottom: 10px;
+}
+
+button:hover {
+  box-shadow: rgba(143, 143, 143, 0.35) 0 -25px 18px -14px inset,
+    rgba(155, 155, 155, 0.25) 0 1px 2px, rgba(145, 145, 145, 0.25) 0 2px 4px,
+    rgba(161, 161, 161, 0.25) 0 4px 8px, rgba(146, 146, 146, 0.25) 0 8px 16px,
+    rgba(150, 149, 149, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+  transition: 0.5s;
+}
+
+button:active {
+  transform: scale(0.95) rotate(0deg);
+  transition: 0.2s;
+}

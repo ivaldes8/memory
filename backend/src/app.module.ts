@@ -10,9 +10,9 @@ import { join } from 'path';
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true, envFilePath: '../.env' }),
-    ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', '..','frontend/build'),
-    }),
+    // ServeStaticModule.forRoot({
+    //   rootPath: join(__dirname, '..', '..','frontend/build'),
+    // }),
     AuthModule,
     UserModule,
     BookmarkModule,

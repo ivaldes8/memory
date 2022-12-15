@@ -7,6 +7,11 @@
   --gray: #85888c;
   --blue: #00a2ff;
   --blueBlur: #0066ff8a;
+  --primary: #0d6efd;
+  --secundary: #e9e9e9;
+  --danger: #dc3545;
+  --warning: #ffc107;
+  --info: #0dcaf0;
 } /* variables*/
 
 /* Reset */
